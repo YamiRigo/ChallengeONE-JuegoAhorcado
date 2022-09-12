@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="Css/style.css">   
+        <title>La Horca</title>
+    </head>
+
+    <body>
+
+        <audio class="audio" id="audio1" controls>
+            <source type="audio/mp3" src="sound/sfxboing.mp3">
+        </audio>
+        <audio class="audio" id="audio2" controls>
+            <source type="audio/mp3" src="sound/sfxpop.mp3">
+        </audio>
+        <audio class="audio" id="audio3" controls>
+            <source type="audio/mp3" src="sound/sfx-piano-fantasia2.mp3">
+        </audio>
+        <audio class="audio" id="audio4" controls>
+            <source type="audio/mp3" src="sound/sfx-piano-mystery.mp3">
+        </audio>
+
+        <script type="text/javascript" src="Js/fireworks.js"></script>
+
+        <div id="inicio">
+
+            <div id="titulo">
+                <img class="imagen" width="65" height="65" src="img/horca.png">
+                <h1 class="titulo">LA H&nbsp&nbsp&nbsp&nbspRCA</h1>
+            </div>
+            <div id="subtitulo">
+                <h2 class="subtitulo">¡Descubre la palabra escondida y
+                    salva a Jaime de su destino!
+                </h2>
+                <p id="instrucciones">¡Agregar nuevas palabras!<br>Las mismas
+                    pueden tener entre 3 y 17 letras. Puedes agregar más de una palabra
+                    por vez separándolas con la barra espaciadora.
+                    No se aceptan números ni caracteres especiales.
+                </p>
+            </div>
+
+        </div>
+
+        <div id="contenedor">
+
+            <div id="panel-botones">
+                <button class="btn desplazar-original" id="boton-iniciar-juego">Iniciar Juego</button>
+                <div id="panel-agregar-palabra">
+                    <input class="text-input desplazar-original" type="text"
+                        id="ingresar-nueva-palabra" placeholder="Ingrese una nueva palabra">
+                    <button class="btn desplazar-original" id="boton-agregar-palabra">
+                        <p class="visible" id="texto-boton">Agregar Palabras</p>
+                    </button>
+                </div>
+            </div>
+            <div id="subcontenedor">
+                <div id="panel-canvas">
+                    <canvas id="pantalla" width="400" height="500"></canvas>
+                    <input id="input-teclado">
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="Js/almacenamientoPalabras.js"></script>
+        <script type="text/javascript" src="Js/animacion.js"></script>
+        <script type="text/javascript" src="Js/ahorcado.js"></script>
+        <script type="text/javascript" src="Js/agregarPalabra.js"></script>
+        <script type="text/javascript" src="Js/canvas.js"></script> 
+        
+    </body>
+
+    <footer>
+        <h6>Code by Yamila Rigo</h6>
+        <div>
+            <div class="img-git">
+                <a href="https://github.com/YamiRigo" target="_blank">
+                <img src="img/github-logo.png" alt="logo-git">
+                </a>
+            </div>
+
+            <div class="img-link">
+                <a href="https://www.linkedin.com/in/yamila-rigo-535460200/" target="_blank">
+                <img src="img/linkedin-logo.png" alt="logo-linkedin">
+                </a>
+            </div>
+        </div>        
+    </footer>
+
+</html>
