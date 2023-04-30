@@ -4,7 +4,7 @@ var ingresarNuevaPalabra = document.querySelector("#ingresar-nueva-palabra");
 var textoBoton = document.querySelector("#texto-boton");
 
 /* Declaring variables. */
-var ckick = -1;
+var click = -1;
 var entrada = "";
 var palabrasInvalidas = [];
 var palabrasValidas = [];
